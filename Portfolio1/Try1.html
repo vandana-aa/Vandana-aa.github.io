@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vandana - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(17, 90, 114);
+        color: white;
+        font-family: "Poppins";
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(40, 152, 152);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: aqua;
+        font-size: 1.02rem;
+      }
+      main hr {
+        border: 0;
+        background: cyan;
+        height: 1.2px;
+        margin: 20px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 110px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        /*background-color: rgb(37, 37, 187);*/
+        font-size: 3rem;
+      }
+      .leftsection .btn {
+        padding: 12px;
+
+        color: black;
+        border: aqua;
+        background: aquamarine;
+        border-radius: 12px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightsection img {
+        width: 100%; /* Adjusted width for responsiveness */
+        margin: 40px 0;
+      }
+
+      .purple {
+        color: aquamarine;
+      }
+      .text-gray {
+        color: grey;
+      }
+      #element {
+        color: aquamarine;
+      }
+
+      .secondSection {
+        max-width: 80vm;
+        margin: 0 80px;
+        height: 80vp;
+      }
+      .secondSection h1 {
+        font-size: 1.6rem;
+        font-style: poppins;
+      }
+      .secondSection box {
+        background: white;
+        width: 80vm;
+        height: 2px;
+        margin: 56px 0;
+      }
+      footer {
+        background-color: rgb(26, 102, 128);
+        margin: 40px;
+      }
+      .footer {
+        display: flex;
+        margin: 133px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="left">Vandana's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <main>
+        <section class="firstsection">
+          <div class="leftsection">
+            Hi, My name is <span class="purple">Vandana </span>
+            <div>and I am a</div>
+            <span id="element"></span>
+            <div class="buttons">
+              <button class="btn">Download Resume</button>
+              <button class="btn">Visit Github</button>
+            </div>
+          </div>
+          <div class="rightsection">
+            <img src="bg.png" alt="" />
+          </div>
+        </section>
+        <hr />
+        <section class="secondSection">
+          <span class="text-gray">What I have done so far</span>
+          <h1>Past Experience</h1>
+          <div class="box"></div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer">
+          <div class="footer-first">
+            <h3>Vandana's Developer Portfolio</h3>
+          </div>
+          <div class="footer-second"></div>
+          <div class="footer-third"></div>
+          <div class="footer-fourth"></div>
+        </div>
+      </footer>
+    </header>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web developer", "Product Manager", "Web designer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
